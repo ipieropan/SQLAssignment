@@ -88,10 +88,13 @@ insert into jacket(brand, size, material, playerId) values("Lacoste", 'XL', 'Gor
 
 -- Niklas club material: Wood / hardness: 10
 -- Annika club material: Wood / hardness: 5
+-- Igor club material: Diamond / hardness: 100 (God's golf club)
+insert into construction(hardness) values('100 HRC');
 insert into construction(hardness) values('10 HRC');
 insert into construction(hardness) values('5 HRC');
 insert into golfclub(clubNumber, material, playerId, constructionSerial) values('#3', 'Wood', 200101233566, '1');
 insert into golfclub(clubNumber, material, playerId, constructionSerial) values('#3', 'Wood', 200110238975, '2');
+insert into golfclub(clubNumber, material, playerId, constructionSerial) values('#1', 'Diamond', 198010230001, '3');
 
 -- Every player playing --
 insert into competitionPresence(competitionName, competitionDate, playerId) values('Big Golf Cup Skövde', '2021-06-10', 200110238975);
